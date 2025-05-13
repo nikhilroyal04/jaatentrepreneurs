@@ -1,7 +1,22 @@
+import HeroSection from "./home/heroSection";
+import TechStack from "./home/techStack";
+import ClientsSection from "./home/clientsSection";
+import AboutSection from "./home/aboutSection";
+import CtaSection from "./home/ctaSection";
+import ContactSection from "./home/contactSection";
+import ServicesSection from "./home/servicesSection";
+
+
 export default function Home() {
   return (
-    <div className="flex items-center justify-center min-h-screen w-full">
-      <h1 className="text-3xl font-bold text-center">Welcome to Jaat Entrepreneurs </h1>
-    </div>
+    <main>
+      <HeroSection />
+      <ServicesSection />
+      <TechStack />
+      <AboutSection />
+      <ClientsSection />
+      <CtaSection />
+      <ContactSection />
+    </main>
   );
 }
