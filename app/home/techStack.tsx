@@ -10,7 +10,7 @@ export default function ProductsSection() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6">
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Tech Stack</span>
           </h2>
-          <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 tracking-tight">What We Use</h4>
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 tracking-tight">What We Use</h3>
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto relative z-20">
             {[
               "React", "Next.js", "Tailwind CSS", "TypeScript", "Redux",

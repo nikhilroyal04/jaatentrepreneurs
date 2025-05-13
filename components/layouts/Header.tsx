@@ -39,7 +39,7 @@ export default function Header() {
           className="flex flex-row items-center justify-center cursor-pointer"
         >
           <Link href="/" className="flex flex-row items-center">
-            <Image src="/jaat.png" alt="Jaat Entrepreneurs" width={125} height={125} />
+            <Image src="/jaat.png" alt="Jaat Entrepreneurs" width={125} height={85} />
           </Link>
         </motion.div>
         {/* Navigation - hidden on mobile */}

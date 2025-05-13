@@ -11,13 +11,13 @@ export default function Footer() {
           <Image src="/jaat.png" alt="Jaat Entrepreneurs" width={150} height={150} />
         </div>
         <div className="flex items-center gap-6 mt-2 justify-center">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white shadow hover:bg-blue-50 hover:text-blue-600 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
+          <a href="https://github.com/nikhilroyal04" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="rounded-full bg-white shadow hover:bg-blue-50 hover:text-blue-600 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
             <Github size={24} />
           </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white shadow hover:bg-blue-100 hover:text-blue-500 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
+          <a href="https://twitter.com/nikhilroyal04" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="rounded-full bg-white shadow hover:bg-blue-100 hover:text-blue-500 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
             <Twitter size={24} />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white shadow hover:bg-blue-200 hover:text-blue-700 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
+          <a href="https://linkedin.com/in/nikhilchaudhary" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="rounded-full bg-white shadow hover:bg-blue-200 hover:text-blue-700 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
             <Linkedin size={24} />
           </a>
         </div>
