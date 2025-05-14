@@ -2,8 +2,16 @@
 import { motion } from "framer-motion";
 
 export default function ProductsSection() {
+  const techColors = [
+    "bg-blue-100 text-blue-700",
+    "bg-cyan-100 text-cyan-700",
+    "bg-sky-100 text-sky-700",
+    "bg-blue-50 text-blue-600",
+    "bg-cyan-50 text-cyan-600",
+    "bg-indigo-100 text-indigo-700"
+  ];
   return (
-    <section id="products" className="relative py-16 px-4 bg-gradient-to-br from-white via-blue-50 to-cyan-50">
+    <section id="products" className="scroll-mt-24 relative py-16 px-4 bg-gradient-to-br from-white via-blue-50 to-fuchsia-50">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
         {/* All Technologies Used Grid */}
         <div className="relative mt-2 w-full flex flex-col items-center z-10">
@@ -37,9 +45,9 @@ export default function ProductsSection() {
                   delay: (i % 7) * 0.13
                 }}
                 whileHover={{ scale: 1.16, boxShadow: "0 2px 24px #38bdf8aa" }}
-                className="px-4 py-2 rounded-full bg-white/60 border border-blue-100/40 backdrop-blur-md text-sm font-semibold text-gray-700 shadow transition-all duration-200 cursor-default select-none"
+                className={`px-4 py-2 rounded-full border border-blue-100/40 backdrop-blur-md text-sm font-semibold shadow transition-all duration-200 cursor-default select-none ${techColors[i % techColors.length]}`}
                 style={{
-                  background: 'linear-gradient(120deg,rgba(255,255,255,0.85) 60%,rgba(236,254,255,0.7) 100%)',
+                  background: undefined,
                   border: '1.5px solid rgba(56,189,248,0.13)',
                   boxShadow: '0 1.5px 8px #38bdf822',
                 }}

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative py-16 px-4 bg-gradient-to-br from-white via-blue-50 to-cyan-50 overflow-hidden">
+    <section id="about" className="scroll-mt-24 relative py-16 px-4 bg-gradient-to-br from-white via-blue-50 to-fuchsia-50">
       {/* Optional animated SVG background */}
       <motion.svg
         className="absolute inset-0 w-full h-full z-0 pointer-events-none"
@@ -41,6 +41,32 @@ export default function AboutSection() {
           </radialGradient>
         </defs>
       </motion.svg>
+      {/* Floating Dots/Particles Animation */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {Array.from({ length: 18 }).map((_, i) => (
+          <motion.span
+            key={i}
+            className="absolute rounded-full bg-cyan-200 opacity-60"
+            style={{
+              width: `${12 + (i % 3) * 6}px`,
+              height: `${12 + (i % 3) * 6}px`,
+              left: `${(i * 11) % 100}%`,
+              top: `${(i * 23) % 100}%`,
+              filter: 'blur(1.5px)'
+            }}
+            animate={{
+              y: [0, (i % 2 === 0 ? 18 : -18), 0],
+              opacity: [0.6, 0.9, 0.6],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 7 + (i % 5),
+              delay: i * 0.3,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
+      </div>
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center relative z-10">
         {/* Animated Heading */}
         <motion.h2
@@ -60,7 +86,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="max-w-xl text-xl font-bold text-blue-700 mb-4"
         >
-          Empowering brands to build, launch, and grow with world-class digital products.
+          🚀 Empowering visionaries to disrupt, scale, and lead with digital brilliance.
         </motion.p>
         {/* Animated Main Paragraph */}
         <motion.p
@@ -70,7 +96,8 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="max-w-2xl text-lg text-gray-600 mb-8"
         >
-          We are a vibrant collective of engineers, designers, and strategists who thrive on innovation and collaboration. With years of experience in web and mobile app development, we serve clients in Meerut, Muzaffarnagar, and across India. Our expertise spans Next.js, React, WordPress, e-commerce, and digital marketing, enabling us to deliver robust, scalable, and user-friendly solutions tailored to your business needs. We believe in pushing boundaries, embracing new technologies, and crafting experiences that delight users and empower businesses. Every project is a partnership, and every client is part of our journey.
+          We&apos;re not just another agency&mdash;we&apos;re your digital growth partners. At Jaat Entrepreneurs, we blend code, creativity, and business strategy to launch brands into the future. Our team is a tribe of innovators, engineers, and designers obsessed with building products that don&apos;t just work, but wow.<br /><br />
+          From startups with wild ideas to enterprises ready to level up, we architect solutions that are fast, beautiful, and built to scale. We live and breathe Next.js, React, cloud, and cutting-edge tech&mdash;so your business always stays ahead of the curve.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -79,7 +106,8 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="max-w-2xl text-base text-gray-600 mb-8"
         >
-          We have successfully delivered projects for startups, SMEs, and enterprises, earning a reputation for quality, reliability, and client satisfaction. Our long-term partnerships are built on trust, transparency, and a shared commitment to achieving your business goals. Let us help you grow your digital presence and achieve lasting success.
+          Our work isn&apos;t just about pixels and code. It&apos;s about impact. We believe in radical transparency, relentless quality, and partnerships that feel like family. Every project is a new adventure, every client a collaborator.<br /><br />
+          Ready to make your mark? Let&apos;s build something legendary&mdash;together.
         </motion.p>
         {/* Animated Team Avatars/Icons Row */}
         <motion.div
@@ -89,21 +117,20 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="flex flex-wrap justify-center gap-6 mb-10"
         >
-          {/* Example animated avatars/icons */}
           <motion.div whileHover={{ scale: 1.12 }} className="rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 p-3 shadow-lg">
-            <span role="img" aria-label="Engineer" className="text-3xl">💻</span>
+            <span role="img" aria-label="Engineers" className="text-3xl">💻</span>
           </motion.div>
           <motion.div whileHover={{ scale: 1.12 }} className="rounded-full bg-gradient-to-tr from-fuchsia-500 to-blue-400 p-3 shadow-lg">
-            <span role="img" aria-label="Designer" className="text-3xl">🎨</span>
+            <span role="img" aria-label="Designers" className="text-3xl">🎨</span>
           </motion.div>
           <motion.div whileHover={{ scale: 1.12 }} className="rounded-full bg-gradient-to-tr from-cyan-400 to-fuchsia-500 p-3 shadow-lg">
-            <span role="img" aria-label="Strategist" className="text-3xl">🚀</span>
+            <span role="img" aria-label="Strategists" className="text-3xl">🚀</span>
           </motion.div>
           <motion.div whileHover={{ scale: 1.12 }} className="rounded-full bg-gradient-to-tr from-blue-600 to-fuchsia-400 p-3 shadow-lg">
-            <span role="img" aria-label="Collaboration" className="text-3xl">🤝</span>
+            <span role="img" aria-label="Collaborators" className="text-3xl">🤝</span>
           </motion.div>
           <motion.div whileHover={{ scale: 1.12 }} className="rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 p-3 shadow-lg">
-            <span role="img" aria-label="Creativity" className="text-3xl">💡</span>
+            <span role="img" aria-label="Creators" className="text-3xl">💡</span>
           </motion.div>
         </motion.div>
         {/* Call-to-action/Quote */}
@@ -114,7 +141,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="max-w-xl text-lg font-semibold text-cyan-700 italic"
         >
-          &quot;Let&apos;s build something extraordinary together. Your vision, our expertise.&quot;
+          &quot;Don&apos;t just build a website. Build a legacy.&quot;
         </motion.p>
       </div>
     </section>

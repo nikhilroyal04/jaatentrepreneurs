@@ -92,7 +92,7 @@ export default function ContactSection() {
   }, [error]);
 
   return (
-    <section id="contact" className="relative py-24 px-4 bg-gradient-to-br from-white via-blue-50 to-fuchsia-50 overflow-hidden">
+    <section id="contact" className="scroll-mt-24 relative py-24 px-4 bg-gradient-to-br from-white via-blue-50 to-fuchsia-50 overflow-hidden">
       {/* Unique Metro/Geometric Animated Background */}
       <motion.svg
         className="absolute inset-0 w-full h-full z-0 pointer-events-none"

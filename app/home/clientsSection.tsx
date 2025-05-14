@@ -19,6 +19,26 @@ export default function ClientsSection() {
   // Duplicate clients for infinite effect
   const marqueeClients = [...clients, ...clients];
 
+  // Marquee animation state
+  const [x, setX] = React.useState(0);
+  const marqueeWidth = (marqueeClients.length / 2) * 320;
+
+  React.useEffect(() => {
+    let frame: number;
+    if (!paused) {
+      const animate = () => {
+        setX(prev => {
+          const next = prev - 1.2; // speed
+          if (next <= -marqueeWidth) return 0;
+          return next;
+        });
+        frame = requestAnimationFrame(animate);
+      };
+      frame = requestAnimationFrame(animate);
+    }
+    return () => cancelAnimationFrame(frame);
+  }, [paused, marqueeWidth]);
+
   return (
     <section id="clients" className="relative py-20 px-4 bg-gradient-to-br from-white via-blue-50 to-cyan-50 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
@@ -48,18 +68,7 @@ export default function ClientsSection() {
           onMouseLeave={() => setPaused(false)}
         >
           <motion.div
-            animate={{
-              x: paused ? 0 : [0, -((marqueeClients.length / 2) * 320)],
-            }}
-            transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: 22,
-                ease: "linear",
-              },
-            }}
-            style={{ display: 'flex', minWidth: 'max-content' }}
+            style={{ display: 'flex', minWidth: 'max-content', x }}
           >
             {marqueeClients.map((client, i) => (
               <motion.div

@@ -30,7 +30,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="home" className="relative flex flex-col items-center justify-center min-h-[90vh] py-20 px-4 overflow-hidden bg-gradient-to-br from-white via-blue-50 to-cyan-50">
+    <section id="home" className="scroll-mt-24 relative flex flex-col items-center justify-center min-h-[90vh] py-20 px-4 overflow-hidden bg-gradient-to-br from-white via-blue-50 to-fuchsia-50">
       {/* Animated SVG Blobs */}
       <motion.svg
         initial={{ opacity: 0, scale: 0.8 }}
