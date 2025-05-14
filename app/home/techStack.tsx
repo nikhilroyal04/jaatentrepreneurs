@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 export default function ProductsSection() {
   const techColors = [
-    "bg-blue-100 text-blue-700",
-    "bg-cyan-100 text-cyan-700",
-    "bg-sky-100 text-sky-700",
-    "bg-blue-50 text-blue-600",
-    "bg-cyan-50 text-cyan-600",
-    "bg-indigo-100 text-indigo-700"
+    "bg-blue-100 text-blue-900",
+    "bg-cyan-100 text-cyan-900",
+    "bg-sky-100 text-sky-900",
+    "bg-blue-50 text-blue-900",
+    "bg-cyan-50 text-cyan-900",
+    "bg-indigo-100 text-indigo-900"
   ];
   return (
     <section id="products" className="scroll-mt-24 relative py-16 px-4 bg-gradient-to-br from-white via-blue-50 to-fuchsia-50">
