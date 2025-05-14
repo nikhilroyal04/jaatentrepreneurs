@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Github, Linkedin, MessageCircle } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 export default function Footer() {
@@ -14,11 +14,11 @@ export default function Footer() {
           <a href="https://github.com/nikhilroyal04" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="rounded-full bg-white shadow hover:bg-blue-50 hover:text-blue-600 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
             <Github size={24} />
           </a>
-          <a href="https://twitter.com/nikhilroyal04" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="rounded-full bg-white shadow hover:bg-blue-100 hover:text-blue-500 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
-            <Twitter size={24} />
-          </a>
-          <a href="https://linkedin.com/in/nikhilchaudhary" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="rounded-full bg-white shadow hover:bg-blue-200 hover:text-blue-700 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
+          <a href="https://www.linkedin.com/in/nikhil-chaudhary-12819a19a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="rounded-full bg-white shadow hover:bg-blue-200 hover:text-blue-700 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
             <Linkedin size={24} />
+          </a>
+          <a href="https://wa.me/919068552519" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="rounded-full bg-white shadow hover:bg-blue-200 hover:text-blue-700 text-gray-500 transition-all duration-200 p-3 hover:scale-110">
+            <MessageCircle size={24} />
           </a>
         </div>
         <div className="text-gray-500 text-base text-center font-semibold mt-6">

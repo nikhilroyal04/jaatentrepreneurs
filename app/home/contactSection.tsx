@@ -36,24 +36,45 @@ export default function ContactSection() {
   const [message, setMessage] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
+  const [error, setError] = React.useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
-    // Simulate async
-    setTimeout(() => {
-      console.log({ name, email, message });
+    setSuccess(false);
+    setError("");
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setName("");
+        setEmail("");
+        setMessage("");
+        setSuccess(true);
+        setError("");
+      } else {
+        setSuccess(false);
+        setError(data.message || 'Failed to send message.');
+      }
+    } catch (err) {
+      console.error('Error in contact form submission:', err);
+      setSuccess(false);
+      setError('Failed to send message.');
+    } finally {
       setLoading(false);
-      setName("");
-      setEmail("");
-      setMessage("");
-      setSuccess(true);
-    }, 1200);
+    }
   }
 
-  // Hide success message when user types again or after 2 seconds
+  // Hide success/error message when user types again or after 2 seconds
   React.useEffect(() => {
-    if (name || email || message) setSuccess(false);
+    if (name || email || message) {
+      setSuccess(false);
+      setError("");
+    }
   }, [name, email, message]);
 
   React.useEffect(() => {
@@ -62,6 +83,13 @@ export default function ContactSection() {
       return () => clearTimeout(timer);
     }
   }, [success]);
+
+  React.useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => setError("") , 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [error]);
 
   return (
     <section id="contact" className="relative py-24 px-4 bg-gradient-to-br from-white via-blue-50 to-fuchsia-50 overflow-hidden">
@@ -282,6 +310,17 @@ export default function ContactSection() {
               Thanks for reaching out! We will connect with you shortly.
             </motion.div>
           )}
+          {error && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.4 }}
+              className="mt-4 text-red-700 bg-red-50 border border-red-200 rounded-lg px-4 py-2 text-center font-semibold shadow-sm"
+            >
+              {error}
+            </motion.div>
+          )}
         </motion.form>
         {/* Contact Info */}
         <motion.div
@@ -297,7 +336,7 @@ export default function ContactSection() {
             className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-blue-100/40 backdrop-blur-lg"
           >
             <Mail className="text-blue-500" />
-            <span className="text-gray-700 font-medium">hello@jaatentrepreneurs.com</span>
+            <span className="text-gray-700 font-medium">namaste@jaatentrepreneurs.com</span>
           </motion.div>
           <motion.div
             animate={{ y: [0, 8, 0, -8, 0] }}
@@ -308,12 +347,28 @@ export default function ContactSection() {
             <span className="text-gray-700 font-medium">+91 9068552519</span>
           </motion.div>
           <motion.div
+            animate={{ y: [0, 8, 0, -8, 0] }}
+            transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
+            className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-fuchsia-100/40 backdrop-blur-lg"
+          >
+            <Phone className="text-fuchsia-500" />
+            <span className="text-gray-700 font-medium">+91 8433008728</span>
+          </motion.div>
+          <motion.div
             animate={{ y: [0, -8, 0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
             className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-cyan-100/40 backdrop-blur-lg"
           >
             <MapPin className="text-cyan-500" />
             <span className="text-gray-700 font-medium">Meerut, Uttar Pradesh, India</span>
+          </motion.div>
+          <motion.div
+            animate={{ y: [0, -8, 0, 8, 0] }}
+            transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
+            className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-cyan-100/40 backdrop-blur-lg"
+          >
+            <MapPin className="text-cyan-500" />
+            <span className="text-gray-700 font-medium">Muzaffarnagar, Uttar Pradesh, India</span>
           </motion.div>
         </motion.div>
       </div>
