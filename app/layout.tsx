@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jaat Entrepreneurs | Web Development Agency in Meerut, Muzaffarnagar, India",
+  title: "Jaat Entrepreneurs | Leading Web Development & Digital Solutions Agency",
   description: "Jaat Entrepreneurs is a top web development agency in Meerut, Muzaffarnagar, and India, offering custom websites, e-commerce solutions, and digital marketing.",
   keywords: [
     "Jaat Entrepreneurs",
