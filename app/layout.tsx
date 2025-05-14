@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jaat Entrepreneurs | Professional Web Development Agency",
-  description: "Jaat Entrepreneurs is a leading web development agency specializing in custom website design, e-commerce solutions, and digital marketing services. We help businesses establish a strong online presence with cutting-edge technology and proven strategies.",
+  title: "Jaat Entrepreneurs | Web Development Agency in Meerut, Muzaffarnagar, India",
+  description: "Jaat Entrepreneurs is a top web development agency in Meerut, Muzaffarnagar, and India, offering custom websites, e-commerce solutions, and digital marketing.",
   keywords: [
     "Jaat Entrepreneurs",
     "Nikhil Chaudhary",
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     "Web Development Services",
     "Web Development Agency in India",
     "Web Development Agency in Meerut",
+    "Web Development Agency in Muzaffarnagar",
     "Custom Website Design",
     "Custom Website Development",
     "Website Design",
@@ -265,6 +266,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href="https://jaatentrepreneurs.com/" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Jaat Entrepreneurs",
+              image: "https://jaatentrepreneurs.com/logo.png",
+              url: "https://jaatentrepreneurs.com/",
+              telephone: "+91-9068552519",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Your Street, Area",
+                addressLocality: "Meerut",
+                addressRegion: "Uttar Pradesh",
+                postalCode: "250001",
+                addressCountry: "IN"
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "28.9845",
+                longitude: "77.7064"
+              },
+              description: "Jaat Entrepreneurs is a leading web development agency in Meerut, Muzaffarnagar, and India, specializing in custom websites, e-commerce, and digital marketing.",
+              areaServed: ["Meerut", "Muzaffarnagar", "India"],
+              sameAs: [
+                "https://www.facebook.com/jaatentrepreneurs",
+                "https://www.linkedin.com/company/jaatentrepreneurs"
+              ]
+            })
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -70,7 +70,16 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="max-w-2xl text-lg text-gray-600 mb-8"
         >
-          We are a vibrant collective of engineers, designers, and strategists who thrive on innovation and collaboration. Our culture is built on creativity, transparency, and a relentless drive to deliver real impact. We believe in pushing boundaries, embracing new technologies, and crafting experiences that delight users and empower businesses. Every project is a partnership, and every client is part of our journey.
+          We are a vibrant collective of engineers, designers, and strategists who thrive on innovation and collaboration. With years of experience in web and mobile app development, we serve clients in Meerut, Muzaffarnagar, and across India. Our expertise spans Next.js, React, WordPress, e-commerce, and digital marketing, enabling us to deliver robust, scalable, and user-friendly solutions tailored to your business needs. We believe in pushing boundaries, embracing new technologies, and crafting experiences that delight users and empower businesses. Every project is a partnership, and every client is part of our journey.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="max-w-2xl text-base text-gray-600 mb-8"
+        >
+          We have successfully delivered projects for startups, SMEs, and enterprises, earning a reputation for quality, reliability, and client satisfaction. Our long-term partnerships are built on trust, transparency, and a shared commitment to achieving your business goals. Let us help you grow your digital presence and achieve lasting success.
         </motion.p>
         {/* Animated Team Avatars/Icons Row */}
         <motion.div

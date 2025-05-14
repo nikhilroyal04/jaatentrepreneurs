@@ -6,25 +6,25 @@ const services = [
   {
     icon: Code,
     title: "Web Development",
-    desc: "Robust, scalable, and modern web apps tailored to your business needs.",
+    desc: "Robust, scalable, and modern web apps tailored to your business needs. As a leading web development agency in Meerut, Muzaffarnagar, and India, we deliver high-performance websites using Next.js, React, and the latest technologies.",
     color: "from-blue-500 to-cyan-400",
   },
   {
     icon: Smartphone,
     title: "Mobile Apps",
-    desc: "Beautiful, high-performance apps for iOS and Android platforms.",
+    desc: "Beautiful, high-performance apps for iOS and Android platforms. Our team builds custom mobile solutions for businesses in Meerut, Muzaffarnagar, and across India, ensuring seamless user experiences and robust functionality.",
     color: "from-fuchsia-500 to-blue-400",
   },
   {
     icon: Palette,
     title: "UI/UX Design",
-    desc: "Stunning, user-centric designs that delight and convert.",
+    desc: "Stunning, user-centric designs that delight and convert. We create engaging digital experiences for clients in Meerut, Muzaffarnagar, and India, focusing on usability, accessibility, and brand impact.",
     color: "from-cyan-400 to-fuchsia-500",
   },
   {
     icon: Cloud,
     title: "Cloud Solutions",
-    desc: "Secure, scalable cloud infrastructure and DevOps services.",
+    desc: "Secure, scalable cloud infrastructure and DevOps services. We help businesses in Meerut, Muzaffarnagar, and India leverage the power of the cloud for growth, efficiency, and innovation.",
     color: "from-blue-600 to-fuchsia-400",
   },
 ];
