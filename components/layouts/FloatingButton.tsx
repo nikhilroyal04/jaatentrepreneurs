@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const socials = [
   {
-    href: "https://www.linkedin.com/in/nikhil-chaudhary-12819a19a/", // Replace with your LinkedIn
+    href: "https://www.linkedin.com/in/nikhilroyal04/", // Replace with your LinkedIn
     icon: <Linkedin size={22} />, 
     label: "LinkedIn",
     bg: "bg-gradient-to-br from-blue-600 to-cyan-400"
