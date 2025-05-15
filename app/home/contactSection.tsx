@@ -336,7 +336,9 @@ export default function ContactSection() {
             className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-blue-100/40 backdrop-blur-lg"
           >
             <Mail className="text-blue-500" />
-            <span className="text-gray-700 font-medium">namaste@jaatentrepreneurs.com</span>
+            <span className="font-medium text-gray-700 whitespace-nowrap select-all">
+              namaste&#64;jaatentrepreneurs&#46;com
+            </span>
           </motion.div>
           <motion.div
             animate={{ y: [0, 8, 0, -8, 0] }}
