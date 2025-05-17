@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jaat Entrepreneurs | Web Development & Digital Solutions Agency in Meerut & Muzaffarnagar",
+  title: "Jaat Entrepreneurs | Web Development & Digital Solutions Agency",
   description: "Jaat Entrepreneurs is a top web development agency in Meerut, Muzaffarnagar, and India, offering custom websites, e-commerce solutions, and digital marketing.",
    keywords:[
     // 🔥 High-Intent + Geo-Targeted (Top Priority)
@@ -70,26 +70,6 @@ export const metadata: Metadata = {
     "SaaS Development Company Muzaffarnagar",
     "Headless CMS Developers in Meerut",
     "Headless CMS Developers in Muzaffarnagar",
-  
-    // 📱 UI/UX + Apps
-    "UI/UX Design in Meerut",
-    "UI/UX Design in Muzaffarnagar",
-    "Progressive Web Apps in Meerut",
-    "Progressive Web Apps in Muzaffarnagar",
-    "Cross Platform App Development Meerut",
-    "Cross Platform App Development Muzaffarnagar",
-  
-    // 🌐 Business Types & Use Cases
-    "E-commerce Website Development in Meerut",
-    "E-commerce Website Development in Muzaffarnagar",
-    "Restaurant Website Development Meerut",
-    "Restaurant Website Development Muzaffarnagar",
-    "Education Website Development Meerut",
-    "Education Website Development Muzaffarnagar",
-    "Real Estate Website Meerut",
-    "Real Estate Website Muzaffarnagar",
-    "Salon App Development Meerut",
-    "Salon App Development Muzaffarnagar",
   
     // ⚡ Performance + Security + Hosting
     "Website Speed Optimization Meerut",
