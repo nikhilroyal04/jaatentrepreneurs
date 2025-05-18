@@ -22,6 +22,8 @@ export const metadata: Metadata = {
     // 🔥 High-Intent + Geo-Targeted (Top Priority)
     "Jaat Entrepreneurs",
     "Jaat Entrepreneur",
+    "jaatentrepreneur",
+    "jaatentrepreneurs",
     "Jaat",
     "Jaat Developer",
     "Popular Jaat Entrepreneurs",
@@ -118,7 +120,7 @@ export default function RootLayout({
               telephone: "+91-9068552519",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Your Street, Area",
+                streetAddress: "Jaat Entrepreneurs",
                 addressLocality: "Meerut",
                 addressRegion: "Uttar Pradesh",
                 postalCode: "250001",
