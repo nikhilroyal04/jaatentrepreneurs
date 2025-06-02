@@ -348,14 +348,14 @@ export default function ContactSection() {
             <Phone className="text-fuchsia-500" />
             <span className="text-gray-700 font-medium">+91 9068552519</span>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             animate={{ y: [0, 8, 0, -8, 0] }}
             transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut" }}
             className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-fuchsia-100/40 backdrop-blur-lg"
           >
             <Phone className="text-fuchsia-500" />
             <span className="text-gray-700 font-medium">+91 8433008728</span>
-          </motion.div>
+          </motion.div> */}
           <motion.div
             animate={{ y: [0, -8, 0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
@@ -364,14 +364,14 @@ export default function ContactSection() {
             <MapPin className="text-cyan-500" />
             <span className="text-gray-700 font-medium">Meerut, Uttar Pradesh, India</span>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             animate={{ y: [0, -8, 0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
             className="flex items-center gap-4 bg-white/70 rounded-xl px-5 py-4 shadow border border-cyan-100/40 backdrop-blur-lg"
           >
             <MapPin className="text-cyan-500" />
             <span className="text-gray-700 font-medium">Muzaffarnagar, Uttar Pradesh, India</span>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

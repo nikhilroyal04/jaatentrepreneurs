@@ -150,7 +150,7 @@ export default function HeroSection() {
         className="relative z-20 flex flex-col items-center text-center"
       >
         <h1 className="sr-only">
-          Web Development Agency in Meerut, Muzaffarnagar, India | Jaat Entrepreneurs
+          Web Development Agency in Meerut, India | Jaat Entrepreneurs
         </h1>
         {/* Animated Headline Reveal */}
         <motion.div
@@ -174,7 +174,7 @@ export default function HeroSection() {
           ))}
         </h1>
         <p className="max-w-2xl text-lg sm:text-xl text-gray-600 mb-8">
-          Jaat Entrepreneurs is a leading web development agency in Meerut, Muzaffarnagar, and across India. We craft modern software solutions for ambitious brands, helping businesses establish a strong online presence with custom website design, e-commerce solutions, and digital marketing services.
+          Jaat Entrepreneurs is a leading web development agency in Meerut, and across India. We craft modern software solutions for ambitious brands, helping businesses establish a strong online presence with custom website design, e-commerce solutions, and digital marketing services.
         </p>
         {/* Animated process bar with connectors */}
         <motion.div
